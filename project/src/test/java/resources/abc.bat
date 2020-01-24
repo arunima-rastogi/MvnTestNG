@@ -1,1 +1,1 @@
-echo "Hello world"
+echo "Hello world from batch file... called from pom.xml"
