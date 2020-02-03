@@ -61,7 +61,7 @@ public class InstantiationExamples {
 		WebDriverWait wt = new WebDriverWait(driver, 45);
 		WebElement element = wt.until(ExpectedConditions.elementToBeClickable(ele));
 
-		ele.sendKeys("Hello world");
+		ele.submit();
 		driver.quit();
 
 	}
