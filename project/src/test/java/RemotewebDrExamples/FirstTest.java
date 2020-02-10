@@ -3,6 +3,7 @@ package RemotewebDrExamples;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +21,7 @@ public class FirstTest {
 		desCap.setPlatform(Platform.ANY);
 		WebDriver remoteWebDriver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), desCap);
 		remoteWebDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		((RemoteWebDriver) remoteWebDriver).setLogLevel(Level.OFF);
 		remoteWebDriver.get("http://www.google.com");
 		System.out.println(remoteWebDriver.getTitle());
 		remoteWebDriver.close();
