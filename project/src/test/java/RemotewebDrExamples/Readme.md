@@ -3,7 +3,7 @@
 ## Begin selenium hub on host with
 java -jar selenium-server-standalone-3.12.0.jar -role hub
 
-## Begin selenium node on Ubuntu machine with
+## Begin selenium node on your machine with
 java -Dwebdriver.chrome.driver="<full path to driver>" -jar selenium-server-standalone-3.12.0.jar -role node -hub http://<ip of host machine>:4444/grid/register
 ## Create and run following code on the host machine
 @Test
