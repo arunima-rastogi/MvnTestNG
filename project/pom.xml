@@ -86,7 +86,7 @@
 		<dependency>
 			<groupId>org.drools</groupId>
 			<artifactId>drools-core</artifactId>
-			<version>6.0.1.Final</version>
+			<version>7.60.0.Final</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/htmlunit-driver -->
 		<dependency>
